@@ -2,13 +2,13 @@ package com.chiratsxki.datasalesanalysis.service;
 
 import com.chiratsxki.datasalesanalysis.model.Sale;
 import com.chiratsxki.datasalesanalysis.repo.SaleRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 
 @Service
+@Slf4j
 public class SalesService {
 
     private final SaleRepository saleRepository;
@@ -18,14 +18,20 @@ public class SalesService {
     }
 
     public List<Sale> get10BestSellers(){
-        List<Sale> sales = saleRepository.findTop10ByOrderByQuantityDesc();
-        return sales;
+        log.info("Getting 10 bestsellers");
+        return saleRepository.findTop10ByOrderByQuantityDesc();
+
     }
 
     public List<Sale> getProductByName(String name) {
-
-        List<Sale> product = saleRepository.findSaleByNameOfProduct(name);
-
-        return product;
+        log.info("Getting product by name");
+        return saleRepository.findSaleByNameOfProduct(name);
     }
+
+    public List<Sale> get10SalesByCost() {
+        log.info("Getting 10 products by cost");
+        return saleRepository.findTop10ByOrderByPricePerPieceDesc();
+    }
+
+
 }

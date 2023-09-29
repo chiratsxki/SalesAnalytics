@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.time.LocalDate;
 
 
 @Entity
@@ -18,6 +19,9 @@ public class Sale {
     private String nameOfProduct;
 
     private Integer quantity;
+
+    private Integer pricePerPiece;
+
 
 
 
