@@ -11,11 +11,12 @@ import java.util.List;
 @Slf4j
 public class SalesService {
 
-    private final SaleRepository saleRepository;
+    private static SaleRepository saleRepository;
 
     public SalesService(SaleRepository saleRepository) {
-        this.saleRepository = saleRepository;
+        SalesService.saleRepository = saleRepository;
     }
+
 
     public List<Sale> get10BestSellers(){
         log.info("Getting 10 bestsellers");
@@ -31,6 +32,14 @@ public class SalesService {
     public List<Sale> get10SalesByCost() {
         log.info("Getting 10 products by cost");
         return saleRepository.findTop10ByOrderByPricePerPieceDesc();
+    }
+
+    public Sale save(Sale  user){
+        return saleRepository.save(user);
+    }
+
+    public static Iterable<Sale> save(List<Sale> users) {
+        return saleRepository.saveAll(users);
     }
 
 

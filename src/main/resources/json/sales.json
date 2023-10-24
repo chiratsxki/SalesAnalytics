@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nameOfProduct": "Health",
+    "quantity": 20,
+    "pricePerPiece": 12
+    },
+  {
+    "id": 2,
+    "nameOfProduct": "IT",
+    "quantity": 56,
+    "pricePerPiece": 140
+  }
+]
