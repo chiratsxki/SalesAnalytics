@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "MacBookAir",
+    "chip": "M1",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Space Graay",
+    "quantity": 12000,
+    "pricePerPiece": 999
+  },
+  {
+    "id": 2,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 512,
+    "color": "Midnight",
+    "quantity": 16000,
+    "pricePerPiece": 1399
+  },
+  {
+    "id": 3,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Midnight",
+    "quantity": 18000,
+    "pricePerPiece": 1099
+  },
+  {
+    "id": 4,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Silver",
+    "quantity": 14000,
+    "pricePerPiece": 1099
+  },
+  {
+    "id": 5,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 512,
+    "color": "Silver",
+    "quantity": 22000,
+    "pricePerPiece": 1399
+  },
+  {
+    "id": 6,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 15,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Midnight",
+    "quantity": 25000,
+    "pricePerPiece": 1299
+  },
+  {
+    "id": 7,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 15,
+    "unifiedmemory": 8,
+    "ssd": 512,
+    "color": "Midnight",
+    "quantity": 27000,
+    "pricePerPiece": 1499
+  },
+  {
+    "id": 8,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 15,
+    "unifiedmemory": 8,
+    "ssd": 512,
+    "color": "Silver",
+    "quantity": 27700,
+    "pricePerPiece": 1499
+  },
+  {
+    "id": 9,
+    "name": "MacBookAir",
+    "chip": "M2",
+    "inch": 15,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Silver",
+    "quantity": 24500,
+    "pricePerPiece": 1299
+  },
+  {
+    "id": 10,
+    "name": "MacBookAir",
+    "chip": "M1",
+    "inch": 13,
+    "unifiedmemory": 8,
+    "ssd": 256,
+    "color": "Gold",
+    "quantity": 9000,
+    "pricePerPiece": 999
+  }
+]
