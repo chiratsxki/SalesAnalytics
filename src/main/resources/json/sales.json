@@ -8,7 +8,7 @@
     "ssd": 256,
     "color": "Space Graay",
     "quantity": 12000,
-    "pricePerPiece": 999
+    "price": 999
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "ssd": 512,
     "color": "Midnight",
     "quantity": 16000,
-    "pricePerPiece": 1399
+    "price": 1399
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "ssd": 256,
     "color": "Midnight",
     "quantity": 18000,
-    "pricePerPiece": 1099
+    "price": 1099
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "ssd": 256,
     "color": "Silver",
     "quantity": 14000,
-    "pricePerPiece": 1099
+    "price": 1099
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "ssd": 512,
     "color": "Silver",
     "quantity": 22000,
-    "pricePerPiece": 1399
+    "price": 1399
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "ssd": 256,
     "color": "Midnight",
     "quantity": 25000,
-    "pricePerPiece": 1299
+    "price": 1299
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "ssd": 512,
     "color": "Midnight",
     "quantity": 27000,
-    "pricePerPiece": 1499
+    "price": 1499
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "ssd": 512,
     "color": "Silver",
     "quantity": 27700,
-    "pricePerPiece": 1499
+    "price": 1499
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "ssd": 256,
     "color": "Silver",
     "quantity": 24500,
-    "pricePerPiece": 1299
+    "price": 1299
   },
   {
     "id": 10,
@@ -107,6 +107,6 @@
     "ssd": 256,
     "color": "Gold",
     "quantity": 9000,
-    "pricePerPiece": 999
+    "price": 999
   }
 ]
