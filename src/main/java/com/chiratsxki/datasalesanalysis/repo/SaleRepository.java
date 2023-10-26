@@ -7,10 +7,9 @@ import java.util.List;
 
 public interface SaleRepository extends JpaRepository<Sale, Long> {
 
-    List<Sale> findTop10ByOrderByQuantityDesc();
 
-    List<Sale> findSaleByNameOfProduct(String name);
+    List<Sale> findSaleByName(String name);
 
-    List<Sale> findTop10ByOrderByPricePerPieceDesc();
+    
 
 }

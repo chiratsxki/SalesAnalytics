@@ -18,28 +18,19 @@ public class SalesService {
     }
 
 
-    public List<Sale> get10BestSellers(){
-        log.info("Getting 10 bestsellers");
-        return saleRepository.findTop10ByOrderByQuantityDesc();
-
-    }
-
     public List<Sale> getProductByName(String name) {
         log.info("Getting product by name");
-        return saleRepository.findSaleByNameOfProduct(name);
+        return saleRepository.findSaleByName(name);
     }
 
-    public List<Sale> get10SalesByCost() {
-        log.info("Getting 10 products by cost");
-        return saleRepository.findTop10ByOrderByPricePerPieceDesc();
+    
+
+    public Sale save(Sale  sale){
+        return saleRepository.save(sale);
     }
 
-    public Sale save(Sale  user){
-        return saleRepository.save(user);
-    }
-
-    public static Iterable<Sale> save(List<Sale> users) {
-        return saleRepository.saveAll(users);
+    public static Iterable<Sale> save(List<Sale> sale) {
+        return saleRepository.saveAll(sale);
     }
 
 

@@ -19,20 +19,14 @@ public class SalesController {
         this.salesService = salesService;
     }
 
-    @GetMapping("/top-10-bestsellers")
-    public List<Sale> getTopBestsellers() {
-        return salesService.get10BestSellers();
-    }
+
 
     @GetMapping("/product/{name}")
     public List<Sale> getProductByName(@PathVariable String name) {
         return salesService.getProductByName(name);
     }
 
-    @GetMapping("/topCost")
-    public List<Sale> get10CostSales() {
-        return salesService.get10SalesByCost();
-    }
+
 
 
 

@@ -1,7 +1,6 @@
 package com.chiratsxki.datasalesanalysis;
 
 import com.chiratsxki.datasalesanalysis.model.Sale;
-import com.chiratsxki.datasalesanalysis.repo.SaleRepository;
 import com.chiratsxki.datasalesanalysis.service.SalesService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,8 +11,6 @@ import org.springframework.context.annotation.Bean;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
@@ -27,16 +24,15 @@ public class DataSalesAnalysisApplication {
     @Bean
     CommandLineRunner runner(SalesService salesService) {
         return args -> {
-            // read json and write to db
             ObjectMapper mapper = new ObjectMapper();
             TypeReference<List<Sale>> typeReference = new TypeReference<List<Sale>>(){};
             InputStream inputStream = TypeReference.class.getResourceAsStream("/json/sales.json");
             try {
                 List<Sale> sales = mapper.readValue(inputStream,typeReference);
                 SalesService.save(sales);
-                System.out.println("Users Saved!");
-            } catch (IOException e){
-                System.out.println("Unable to save users: " + e.getMessage());
+                System.out.println("Products Saved!");
+            } catch (IOException e) {
+                System.out.println("Unable to save products: " + e.getMessage());
             }
         };
     }
