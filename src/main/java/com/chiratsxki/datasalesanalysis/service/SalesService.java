@@ -3,6 +3,7 @@ package com.chiratsxki.datasalesanalysis.service;
 import com.chiratsxki.datasalesanalysis.model.Sale;
 import com.chiratsxki.datasalesanalysis.repo.SaleRepository;
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,10 +18,14 @@ public class SalesService {
         SalesService.saleRepository = saleRepository;
     }
 
-
     public List<Sale> getProductByName(String name) {
         log.info("Getting product by name");
         return saleRepository.findSaleByName(name);
+    }
+
+    public List<Sale> getProductByChip(String chip) {
+        log.info("Getting products by chip");
+        return saleRepository.findSaleByChip(chip);
     }
 
     
