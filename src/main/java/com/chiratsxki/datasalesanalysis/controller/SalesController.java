@@ -3,7 +3,6 @@ package com.chiratsxki.datasalesanalysis.controller;
 import com.chiratsxki.datasalesanalysis.model.Sale;
 import com.chiratsxki.datasalesanalysis.service.SalesService;
 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,9 +33,9 @@ public class SalesController {
         return salesService.getProductByChip(chip);
     }
 
-
-
-
-
+    @GetMapping("/product/ssd/{ssd}")
+    public List<Sale> getProductSsd(@PathVariable int ssd) {
+        return salesService.getProductBySsd(ssd);
+    }
 
 }

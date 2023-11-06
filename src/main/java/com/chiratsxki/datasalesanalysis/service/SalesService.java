@@ -28,6 +28,11 @@ public class SalesService {
         return saleRepository.findSaleByChip(chip);
     }
 
+    public List<Sale> getProductBySsd(int ssd) {
+        log.info("Getting product by SSD");
+        return saleRepository.findSaleBySsd(ssd);
+    }
+
     
 
     public Sale save(Sale  sale){
@@ -37,6 +42,7 @@ public class SalesService {
     public static Iterable<Sale> save(List<Sale> sale) {
         return saleRepository.saveAll(sale);
     }
+
 
 
 }
