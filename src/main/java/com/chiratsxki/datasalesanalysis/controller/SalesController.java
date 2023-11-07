@@ -21,6 +21,10 @@ public class SalesController {
     }
 
 
+    @GetMapping("/product/all")
+    public List<Sale> getAllProducts() {
+        return salesService.getAllProducts();
+    }
     
     @GetMapping("/product/{name}")
     public List<Sale> getProductByName(@PathVariable String name) {

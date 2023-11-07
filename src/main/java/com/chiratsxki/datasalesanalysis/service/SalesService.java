@@ -33,8 +33,6 @@ public class SalesService {
         return saleRepository.findSaleBySsd(ssd);
     }
 
-    
-
     public Sale save(Sale  sale){
         return saleRepository.save(sale);
     }
@@ -43,6 +41,7 @@ public class SalesService {
         return saleRepository.saveAll(sale);
     }
 
-
-
+    public List<Sale> getAllProducts() {
+        return saleRepository.findAll();
+    }
 }
