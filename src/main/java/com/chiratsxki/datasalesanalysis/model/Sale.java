@@ -2,6 +2,7 @@ package com.chiratsxki.datasalesanalysis.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 
@@ -9,6 +10,7 @@ import lombok.Data;
 @Entity
 @AllArgsConstructor
 @Data
+@Builder
 public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

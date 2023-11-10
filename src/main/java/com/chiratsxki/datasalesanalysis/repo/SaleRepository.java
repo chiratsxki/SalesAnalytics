@@ -15,5 +15,5 @@ public interface SaleRepository extends JpaRepository<Sale, Long> {
     List<Sale> findSaleByChip(String name);
 
     List<Sale> findSaleBySsd(int ssd);
-
+    
 }
