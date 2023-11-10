@@ -71,7 +71,7 @@ public class SalesConrollerTest {
       List<Sale> productList = saleRepository.findAll();
 
       Assertions.assertThat(productList).isNotNull();
-      Assertions.assertThat(productList.size()).isEqualTo(2);
+      Assertions.assertThat(productList.size()).isEqualTo(13);
 
   }
 
