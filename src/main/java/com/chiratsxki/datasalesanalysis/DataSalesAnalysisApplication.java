@@ -22,21 +22,21 @@ public class DataSalesAnalysisApplication {
     }
 
 
-    @Bean
-    CommandLineRunner runner(SalesService salesService) {
-        return args -> {
-            ObjectMapper mapper = new ObjectMapper();
-            TypeReference<List<Sale>> typeReference = new TypeReference<List<Sale>>(){};
-            InputStream inputStream = TypeReference.class.getResourceAsStream("/json/sales.json");
-            try {
-                List<Sale> sales = mapper.readValue(inputStream,typeReference);
-                SalesService.save(sales);
-                System.out.println("Products Saved!");
-            } catch (IOException e) {
-                System.out.println("Unable to save products: " + e.getMessage());
-            }
-        };
-    }
+    // @Bean
+    // CommandLineRunner runner(SalesService salesService) {
+    //     return args -> {
+    //         ObjectMapper mapper = new ObjectMapper();
+    //         TypeReference<List<Sale>> typeReference = new TypeReference<List<Sale>>(){};
+    //         InputStream inputStream = TypeReference.class.getResourceAsStream("/json/sales.json");
+    //         try {
+    //             List<Sale> sales = mapper.readValue(inputStream,typeReference);
+    //             SalesService.save(sales);
+    //             System.out.println("Products Saved!");
+    //         } catch (IOException e) {
+    //             System.out.println("Unable to save products: " + e.getMessage());
+    //         }
+    //     };
+    // }
 
     
 }

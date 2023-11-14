@@ -16,7 +16,7 @@ import org.assertj.core.api.Assertions;
 
 @SpringBootTest
 @AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
-public class SalesConrollerTest {
+public class SalesControllerTest {
 
   @Autowired
   private SaleRepository saleRepository;
@@ -71,7 +71,7 @@ public class SalesConrollerTest {
       List<Sale> productList = saleRepository.findAll();
 
       Assertions.assertThat(productList).isNotNull();
-      Assertions.assertThat(productList.size()).isEqualTo(13);
+      Assertions.assertThat(productList.size()).isEqualTo(3);
 
   }
 
